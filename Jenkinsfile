@@ -2,7 +2,7 @@ pipeline {
   agent any
 
   environment {
-    DOCKERHUB_CREDENTIALS = credentials('dockerhub-credentials')
+    DOCKERHUB_CREDENTIALS = credentials('walexseun-dockerhub')
     DOCKER_REGISTRY_URL = 'docker.io'
     DOCKER_IMAGE_NAME = "my-docker-image:${env.BUILD_NUMBER}"
   }
